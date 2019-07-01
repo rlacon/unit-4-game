@@ -19,3 +19,33 @@ h3 {
 p {
     text-align: center;
 }
+
+section {
+
+    margin: auto;
+    text-align: center;
+
+}
+
+#blue-crystal {
+    width: 75px;
+}
+#red-crystal {
+    width: 75px;
+}
+#yellow-crystal {
+    width: 75px;
+}
+#purple-crystal {
+    width: 75px;
+}
+
+.authorCredit {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    clear:both;
+    color: lightslategray;
+    font-size: 14px;
+    text-align: center
+}
