@@ -16,9 +16,18 @@ h3 {
     text-align: center;
 }
 
+.gameInstructions {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+
 p {
     text-align: center;
+    
 }
+
 
 .crystalContainer {
     width: auto;
@@ -56,3 +65,25 @@ p {
     font-size: 14px;
     text-align: center;
 }
+
+/* Large Desktop Dimensions */
+@media screen and (max-width: 980px) {
+    .gameInstructions {
+        width: 70%;
+    }
+  }
+  
+  /* Medium Desktop Dimensions */
+  @media screen and (max-width: 768px) {
+    .gameInstructions {
+        width: 80%;
+    }
+
+  }
+  
+  /* Phone Screen Dimensions */
+  @media screen and (max-width: 640px) {
+    .gameInstructions {
+        width: 100%;
+    }
+  }
