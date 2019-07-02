@@ -1,5 +1,5 @@
 var matchScore = 0;
-var wins = 10;
+var wins = 0;
 var losses = 0;
 var totalScore = 0;
 var blueGem = 0;
@@ -8,37 +8,86 @@ var redGem = 0;
 var purpleGem = 0;
 
 //---------------BEGIN GAME---------------//
+function resetGame() {
+    matchScore = 0;
+    totalScore = 0;
+    blueGem = 0;
+    yellowGem = 0;
+    redGem = 0;
+    purpleGem = 0;
+    $('#score-text').text(matchScore);
+    console.log(matchScore);
+
+    blueGem = Math.floor(Math.random() * 12) + 1;
+    yellowGem = Math.floor(Math.random() * 12) + 1;
+    redGem = Math.floor(Math.random() * 12) + 1;
+    purpleGem = Math.floor(Math.random() * 12) + 1;
+    matchScore = Math.floor(Math.random() * 120) + 19;
+
+    $('#score-text').text(matchScore);
+    console.log(matchScore);
+};
+
+function gameConditions() {
+    if (totalScore === matchScore) {
+        wins++;
+        $('#wins-text').text(wins);
+        resetGame();
+    } else if (totalScore > matchScore) {
+        losses++;
+        $('#losses-text').text(losses);
+        resetGame();
+    }
+};
 
 // A $( document ).ready() block.
-$(document).ready(function() {
-    console.log( "ready!" );
+$(document).ready(function () {
+    console.log("ready!");
 
-// The crystals need a value upon page load (The multiply symbol is the max and the plus is the min.)
-blueGem = Math.floor(Math.random()*12)+1;
-yellowGem = Math.floor(Math.random()*12)+1;
-redGem = Math.floor(Math.random()*12)+1;
-purpleGem = Math.floor(Math.random()*12)+1;
-matchScore = Math.floor(Math.random()*120)+19;
+    // The crystals need a value upon page load (The multiply symbol is the max and the plus is the min.)
 
-$('#score-text').text(matchScore);
-console.log(matchScore);
+    blueGem = Math.floor(Math.random() * 12) + 1;
+    yellowGem = Math.floor(Math.random() * 12) + 1;
+    redGem = Math.floor(Math.random() * 12) + 1;
+    purpleGem = Math.floor(Math.random() * 12) + 1;
+    matchScore = Math.floor(Math.random() * 120) + 19;
 
-
-
-
-// Clicking button will generate a random number between 1-12
-// All the gems are now equal to numbers from now on 
-$("#blue-gem").on("click", function () {
-    totalScore = blueGem + totalScore;
-    totalScore += blueGem; 
-    console.log(totalScore);
-    $('#total-score-text').text(totalScore);
+    $('#score-text').text(matchScore);
+    console.log(matchScore);
 
 
 
 
-});
+    // Clicking button will generate a random number between 1-12
+    // All the gems are now equal to numbers from now on 
+    $("#blue-gem").on("click", function () {
+        totalScore = blueGem + totalScore;
+        console.log(totalScore);
+        $('#total-score-text').text(totalScore);
+        gameConditions();
+    });
 
+    $("#yellow-gem").on("click", function () {
+        totalScore = yellowGem + totalScore;
+        console.log(totalScore);
+        $('#total-score-text').text(totalScore);
+        gameConditions();
+    });
+
+    $("#purple-gem").on("click", function () {
+        totalScore = purpleGem + totalScore;
+        console.log(totalScore);
+        $('#total-score-text').text(totalScore);
+        gameConditions();
+    });
+
+    $("#red-gem").on("click", function () {
+        totalScore = redGem + totalScore;
+        console.log(totalScore);
+        $('#total-score-text').text(totalScore);
+        gameConditions();
+    });
+    //---------------WIN/LOSE GAME---------------//
 
 });
 //---------------GAME INSTRUCTIONS---------------//
