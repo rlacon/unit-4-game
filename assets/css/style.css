@@ -20,26 +20,31 @@ p {
     text-align: center;
 }
 
-section {
-    margin: auto;
-    text-align: center;
+.crystalContainer {
+    width: auto;
+    height: auto;
+    display: -webkit-box;
+    padding: 80px;
 }
 
-#blue-gem {
-    width: 75px;
-    padding: 10px;
+.blueGem {
+    text-align: center;
+    width: 25%;
 }
-#red-gem {
-    width: 75px;
-    padding: 10px;
+
+.redGem {
+    text-align: center;
+    width: 25%;
 }
-#yellow-gem {
-    width: 75px;
-    padding: 10px;
+
+.yellowGem {
+    text-align: center;
+    width: 25%;
 }
-#purple-gem {
-    width: 75px;
-    padding: 10px;
+
+.purpleGem {
+    text-align: center;
+    width: 25%;
 }
 
 .authorCredit {

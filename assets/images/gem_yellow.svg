@@ -1,45 +1,20 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<polygon style="fill:#FFE182;" points="360.129,172.138 256,472.276 512,172.138 "/>
-<g>
-	<polygon style="fill:#FFCD73;" points="105.931,39.724 0,172.138 151.871,172.138 	"/>
-	<polygon style="fill:#FFCD73;" points="360.129,172.138 512,172.138 406.069,39.724 	"/>
-	<polygon style="fill:#FFCD73;" points="360.129,172.138 256,39.724 151.871,172.138 	"/>
-</g>
-<polygon style="fill:#FFAA64;" points="256,39.724 105.931,39.724 151.871,172.138 "/>
-<polygon style="fill:#FFE182;" points="406.069,39.724 256,39.724 360.129,172.138 "/>
-<polygon style="fill:#FFAA64;" points="151.871,172.138 256,472.276 360.129,172.138 "/>
-<polygon style="fill:#FF8C5A;" points="0,172.138 256,472.276 151.871,172.138 "/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="80px" viewBox="0 0 95 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>yellow-gem</title>
+    <desc>Created with Sketch.</desc>
+    <g id="yellow-gem" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="gem_yellow" transform="translate(0.000000, 0.000000)" fill-rule="nonzero">
+            <polygon id="Path" fill="#FFE182" points="66.3832258 24.5415668 47.1889401 79.8665438 94.3778802 24.5415668"></polygon>
+            <g id="Group" fill="#FFCD73">
+                <polygon id="Path" points="19.5264516 0.133456221 0 24.5415668 27.9946544 24.5415668"></polygon>
+                <polygon id="Path" points="66.3832258 24.5415668 94.3778802 24.5415668 74.8514286 0.133456221"></polygon>
+                <polygon id="Path" points="66.3832258 24.5415668 47.1889401 0.133456221 27.9946544 24.5415668"></polygon>
+            </g>
+            <polygon id="Path" fill="#FFAA64" points="47.1889401 0.133456221 19.5264516 0.133456221 27.9946544 24.5415668"></polygon>
+            <polygon id="Path" fill="#FFE182" points="74.8514286 0.133456221 47.1889401 0.133456221 66.3832258 24.5415668"></polygon>
+            <polygon id="Path" fill="#FFAA64" points="27.9946544 24.5415668 47.1889401 79.8665438 66.3832258 24.5415668"></polygon>
+            <polygon id="Path" fill="#FF8C5A" points="0 24.5415668 47.1889401 79.8665438 27.9946544 24.5415668"></polygon>
+        </g>
+    </g>
 </svg>
