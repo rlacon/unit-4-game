@@ -2,23 +2,45 @@ var matchScore = 0;
 var wins = 10;
 var losses = 0;
 var totalScore = 0;
-
+var blueGem = 0;
+var yellowGem = 0;
+var redGem = 0;
+var purpleGem = 0;
 
 //---------------BEGIN GAME---------------//
 
+// A $( document ).ready() block.
+$(document).ready(function() {
+    console.log( "ready!" );
 
-// Clicking button will generate a random number between 1-9
+// The crystals need a value upon page load (The multiply symbol is the max and the plus is the min.)
+blueGem = Math.floor(Math.random()*12)+1;
+yellowGem = Math.floor(Math.random()*12)+1;
+redGem = Math.floor(Math.random()*12)+1;
+purpleGem = Math.floor(Math.random()*12)+1;
+matchScore = Math.floor(Math.random()*120)+19;
+
+$('#score-text').text(matchScore);
+console.log(matchScore);
+
+
+
+
+// Clicking button will generate a random number between 1-12
+// All the gems are now equal to numbers from now on 
 $("#blue-gem").on("click", function () {
-    alert("test");
+    totalScore = blueGem + totalScore;
+    totalScore += blueGem; 
+    console.log(totalScore);
+    $('#total-score-text').text(totalScore);
 
-    // var randomNumber = "";
 
-    // for (var i = 0; i < 9; i++){
-    //     var random = Math.floor(Math.random()*9)+1;
-    //     randomNumber = random + randomNumber;
-    // } 
+
+
 });
 
+
+});
 //---------------GAME INSTRUCTIONS---------------//
 
 
