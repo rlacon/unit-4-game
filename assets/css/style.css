@@ -21,23 +21,25 @@ p {
 }
 
 section {
-
     margin: auto;
     text-align: center;
-
 }
 
 #blue-crystal {
     width: 75px;
+    padding: 10px;
 }
 #red-crystal {
     width: 75px;
+    padding: 10px;
 }
 #yellow-crystal {
     width: 75px;
+    padding: 10px;
 }
 #purple-crystal {
     width: 75px;
+    padding: 10px;
 }
 
 .authorCredit {
@@ -47,5 +49,5 @@ section {
     clear:both;
     color: lightslategray;
     font-size: 14px;
-    text-align: center
+    text-align: center;
 }

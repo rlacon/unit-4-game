@@ -6,38 +6,35 @@
     <title>Crystal Collector jQuery Game</title>
 </head>
 
-<body>
+<body onload="beginGame()">
     <br><br>
     <h1>Crystal Collector 2</h1><br>
     <h2>Revenge of the Crystals</h2>
     <br><br>
     <h3>How to play: </h3>
     <br>
-    <p>Each crystal has a random number every round. Click the crystals to add points until it matches your score
+    <p>Each crystal has a random number every round. Click the crystals to add points until it matches the score
         exactly.<br> But beware... if you collect too many crystals, you will lose the game.</p>
     <br><br>
 
 
-    <p id="score-text"></p><br>
-    <p>Wins: </p>
-    <p id="wins-text"></p><br>
-    <p>Losses: </p>
-    <p id="losses-text"></p>
-
-    <br><br><br><br>
+    <p>Match the score: </p><p id="score-text"></p><br><br>
+    <p>Wins: </p><p id="wins-text"></p><br><br>
+    <p>Losses: </p><p id="losses-text"></p>
+    <br><br>
 
     <section>
-        <img id="blue-crystal" src="assets/images/crystal_blue.svg" alt="A square-ish gem">
-        <img id="purple-crystal" src="assets/images/crystal_purp.svg" alt="An oval gem">
-        <img id="red-crystal" src="assets/images/crystal_red.svg" alt="A triangular gem">
-        <img id="yellow-crystal" src="assets/images/crystal_yellow.svg" alt="A diamond-shaped gem">
+        <input id="blue-crystal" type="image" src="assets/images/crystal_blue.svg" alt="A square-ish gem" name="saveForm" class="btTxt submit" id="saveForm"/>
+        <input id="blue-crystal" type="image" src="assets/images/crystal_purp.svg" alt="An oval gem" name="saveForm" class="btTxt submit" id="saveForm"/>
+        <input id="blue-crystal" type="image" src="assets/images/crystal_red.svg" alt="A triangular gem" name="saveForm" class="btTxt submit" id="saveForm"/>
+        <input id="blue-crystal" type="image" src="assets/images/crystal_yellow.svg" alt="A diamond-shaped gem" name="saveForm" class="btTxt submit" id="saveForm"/>
     </section>
-    <br><br><br><br>
 
+    <br><br>
     <p>Your total score is: </p>
     <p id="total-score-text"></p>
 
-    <br><br><br><br>
+    <br><br>
     <div class="authorCredit">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a
             href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
             href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0
