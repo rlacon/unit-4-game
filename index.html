@@ -3,36 +3,44 @@
 <head>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <title>Crystal Collector jQuery Game</title>
 </head>
 
-<body onload="beginGame()">
+<body>
     <br><br>
     <h1>Crystal Collector 2</h1><br>
     <h2>Revenge of the Crystals</h2>
     <br><br>
     <h3>How to play: </h3>
     <br>
-    <p>Each crystal has a random number every round. Click the crystals to add points until it matches the score
-        exactly.<br> But beware... if you collect too many crystals, you will lose the game.</p>
+    <p>Each crystal has a random number every round. Click the crystals to add points until it matches the exact score.
+        <br> But beware... if you collect too many crystals, it's game over.</p>
     <br><br>
 
 
-    <p>Match the score: </p><p id="score-text"></p><br><br>
-    <p>Wins: </p><p id="wins-text"></p><br><br>
-    <p>Losses: </p><p id="losses-text"></p>
+    <p>Match the score: </p>
+    <p id="score-text">0</p><br><br>
+    <p>Wins: </p>
+    <p id="wins-text">0</p><br><br>
+    <p>Losses: </p>
+    <p id="losses-text">0</p>
     <br><br>
 
     <section>
-        <input id="blue-crystal" type="image" src="assets/images/crystal_blue.svg" alt="A square-ish gem" name="saveForm" class="btTxt submit" id="saveForm"/>
-        <input id="blue-crystal" type="image" src="assets/images/crystal_purp.svg" alt="An oval gem" name="saveForm" class="btTxt submit" id="saveForm"/>
-        <input id="blue-crystal" type="image" src="assets/images/crystal_red.svg" alt="A triangular gem" name="saveForm" class="btTxt submit" id="saveForm"/>
-        <input id="blue-crystal" type="image" src="assets/images/crystal_yellow.svg" alt="A diamond-shaped gem" name="saveForm" class="btTxt submit" id="saveForm"/>
+        <input id="blue-gem" type="image" src="assets/images/gem_blue.svg" alt="A square-ish gem"/>
+        <input id="purple-gem" type="image" src="assets/images/gem_purp.svg" alt="An oval gem" name="saveForm"
+            class="btTxt submit" id="saveForm" />
+        <input id="red-gem" type="image" src="assets/images/gem_red.svg" alt="A triangular gem" name="saveForm"
+            class="btTxt submit" id="saveForm" />
+        <input id="yellow-gem" type="image" src="assets/images/gem_yellow.svg" alt="A diamond-shaped gem"
+            name="saveForm" class="btTxt submit" id="saveForm" />
     </section>
 
     <br><br>
     <p>Your total score is: </p>
-    <p id="total-score-text"></p>
+    <p id="total-score-text">0</p>
 
     <br><br>
     <div class="authorCredit">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a

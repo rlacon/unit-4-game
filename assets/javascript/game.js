@@ -6,8 +6,15 @@ var totalScore = 0;
 
 //---------------ON PAGE LOAD---------------//
 
-function beginGame() {
-    console.log("Starting a new game!");
 
-}
+// Clicking button will generate a random number between 1-9
+$("#blue-gem").on("click", function(){
+    alert("test");
 
+    // var randomNumber = "";
+
+    // for (var i = 0; i < 9; i++){
+    //     var random = Math.floor(Math.random()*9)+1;
+    //     randomNumber = random + randomNumber;
+    // } 
+});
