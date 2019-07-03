@@ -44,7 +44,7 @@ function gameConditions() {
         resetGame();
 
     // If user's score is more than matchScore, add one point to losses
-    
+
     } else if (totalScore > matchScore) {  
         losses++;
         $('#losses-text').text(losses);
@@ -81,7 +81,7 @@ $(document).ready(function () {
     // All the gems are equal to numbers upon click 
     // Numbers are added to user's total score
     // Display each number increment as text on screen
-    // Call function to reset the game
+    // Check if game has been won or lost each click
 
     $("#blue-gem").on("click", function () {
         totalScore = blueGem + totalScore;

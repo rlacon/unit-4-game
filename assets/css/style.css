@@ -61,10 +61,30 @@ p {
     font-size: 36px;
 }
 
+.victoryContainer {
+    width: 100%;
+    overflow: auto;
+    
+}
+.winCounter {
+    width: 49%;
+    margin: auto;
+    float: left;
+    text-align: center;
 
+}
+.lossCounter {
+    width: 49%;
+    margin: auto;
+    float: right;
+    text-align: center;
+    
+
+}
 
 
 .crystalContainer {
+    
     width: auto;
     height: auto;
     display: -webkit-box;
