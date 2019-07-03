@@ -1,3 +1,5 @@
+
+
 var matchScore = 0;
 var wins = 0;
 var losses = 0;
@@ -7,7 +9,12 @@ var yellowGem = 0;
 var redGem = 0;
 var purpleGem = 0;
 
-//---------------BEGIN GAME---------------//
+
+//---------------START/RESET GAME---------------//
+// Reset all the values back to zero (except wins/losses)
+// Randomize values for matchScore and each gem-click again
+// Display the matchScore and log it
+
 function resetGame() {
     matchScore = 0;
     totalScore = 0;
@@ -15,8 +22,6 @@ function resetGame() {
     yellowGem = 0;
     redGem = 0;
     purpleGem = 0;
-    $('#score-text').text(matchScore);
-    console.log(matchScore);
 
     blueGem = Math.floor(Math.random() * 12) + 1;
     yellowGem = Math.floor(Math.random() * 12) + 1;
@@ -27,24 +32,37 @@ function resetGame() {
     $('#score-text').text(matchScore);
     console.log(matchScore);
 };
+
+// If user's score is equal to matchScore, add one point to wins
+// Display increment to wins counter
+// Reset the game
 
 function gameConditions() {
     if (totalScore === matchScore) {
         wins++;
         $('#wins-text').text(wins);
         resetGame();
-    } else if (totalScore > matchScore) {
+
+    // If user's score is more than matchScore, add one point to losses
+    
+    } else if (totalScore > matchScore) {  
         losses++;
         $('#losses-text').text(losses);
         resetGame();
     }
 };
 
+
+//---------------GAME SETUP---------------//
+
 // A $( document ).ready() block.
+// Need this to start doing jQuery commands
+
 $(document).ready(function () {
     console.log("ready!");
 
-    // The crystals need a value upon page load (The multiply symbol is the max and the plus is the min.)
+    // The crystals need a value upon page load 
+    // (The multiply symbol is the max and plus is the min)
 
     blueGem = Math.floor(Math.random() * 12) + 1;
     yellowGem = Math.floor(Math.random() * 12) + 1;
@@ -52,14 +70,19 @@ $(document).ready(function () {
     purpleGem = Math.floor(Math.random() * 12) + 1;
     matchScore = Math.floor(Math.random() * 120) + 19;
 
+    // Display the matching score on the page 
+
     $('#score-text').text(matchScore);
     console.log(matchScore);
 
 
-
-
+    //---------------WIN/LOSE GAME---------------//
     // Clicking button will generate a random number between 1-12
-    // All the gems are now equal to numbers from now on 
+    // All the gems are equal to numbers upon click 
+    // Numbers are added to user's total score
+    // Display each number increment as text on screen
+    // Call function to reset the game
+
     $("#blue-gem").on("click", function () {
         totalScore = blueGem + totalScore;
         console.log(totalScore);
@@ -87,11 +110,11 @@ $(document).ready(function () {
         $('#total-score-text').text(totalScore);
         gameConditions();
     });
-    //---------------WIN/LOSE GAME---------------//
 
 });
-//---------------GAME INSTRUCTIONS---------------//
 
+
+//---------------GAME INSTRUCTIONS---------------//
 
 //   * There will be four crystals displayed as buttons on the page.
 
