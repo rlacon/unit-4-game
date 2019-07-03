@@ -1,32 +1,60 @@
 h1 {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: bold;
     text-align: center;
+    font-family: 'Russo One', sans-serif;
+    color: white;
+
 }
 
 h2 {
     font-style: italic;
     font-size: 18px;
     text-align: center;
+    font-family: 'Russo One', sans-serif;
+    color: white;
 }
 
 h3 {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
+    font-family: 'Russo One', sans-serif;
+    color: white;
 }
 
 .gameInstructions {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+
     
 }
 
 p {
     text-align: center;
+    font-family: 'Inconsolata', monospace;
+    color: white;
     
 }
+
+#losses-text {
+    font-size: 18px;
+}
+
+#wins-text {
+    font-size: 18px;
+}
+
+#score-text {
+    font-size: 36px;
+}
+
+#total-score-text {
+    font-size: 36px;
+}
+
+
 
 
 .crystalContainer {
@@ -61,7 +89,7 @@ p {
     bottom: 10px;
     width: 100%;
     clear:both;
-    color: lightslategray;
+    color: lightgrey;
     font-size: 14px;
     text-align: center;
 }
