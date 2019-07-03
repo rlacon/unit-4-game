@@ -19,7 +19,7 @@ h2 {
     font-size: 18px;
     text-align: center;
     font-family: 'Russo One', sans-serif;
-    color: white;
+    color: #F22613;
 }
 
 h3 {
@@ -46,26 +46,36 @@ p {
 }
 
 #losses-text {
-    font-size: 18px;
+    font-size: 36px;
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.6;
 }
 
 #wins-text {
-    font-size: 18px;
+    font-size: 36px;
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.6;
 }
 
 #score-text {
     font-size: 36px;
-}
+    color: #1E90FF;
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.6;}
 
 #total-score-text {
     font-size: 36px;
+    color: #1E90FF;
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.6;
 }
+
 
 .victoryContainer {
     width: 100%;
     overflow: auto;
-    
 }
+
 .winCounter {
     width: 49%;
     margin: auto;
@@ -78,17 +88,17 @@ p {
     margin: auto;
     float: right;
     text-align: center;
-    
-
 }
 
 
 .crystalContainer {
-    
-    width: auto;
+    width: 100%;
     height: auto;
     display: -webkit-box;
-    padding: 80px;
+    overflow: hidden;
+    padding-top: 20px;
+
+
 }
 
 .blueGem {
@@ -114,10 +124,11 @@ p {
 .authorCredit {
     position: absolute;
     bottom: 10px;
+    right: 0px;
     width: 100%;
     clear:both;
     color: lightgrey;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -126,6 +137,7 @@ p {
     .gameInstructions {
         width: 70%;
     }
+    
   }
   
   /* Medium Desktop Dimensions */
@@ -133,12 +145,11 @@ p {
     .gameInstructions {
         width: 80%;
     }
-
   }
   
   /* Phone Screen Dimensions */
   @media screen and (max-width: 640px) {
     .gameInstructions {
-        width: 100%;
+        width: 96%;
     }
   }
