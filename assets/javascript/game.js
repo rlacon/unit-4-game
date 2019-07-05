@@ -59,7 +59,7 @@ function gameConditions() {
 // Need this to start doing jQuery commands
 
 $(document).ready(function () {
-    console.log("ready!");
+    console.log("Document Loaded!");
 
     // The crystals need a value upon page load 
     // (The multiply symbol is the max and plus is the min)
